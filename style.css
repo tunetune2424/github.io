@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* 共通部分---------------------- */
+html {
+  font-size: 100%;
+}
+
+body {
+  
+  font-family: 'Noto Sans JP', sans-serif;
+  
+  /* line-height: 1.7; */
+  color: #432;
+
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+ 
+}
+/* .icon {
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 2px #77e1fe;
+} */
+
+/* HEADER-------------------- */
+img.logo {
+  width: 50px;
+  height: 50px;
+  margin: 5px 158px 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 2px #77e1fe;
+}
+.main-nav {
+  display: flex; /*横並びの指定*/
+  font-size: 16px;
+  margin: 22px 0;
+  margin-right: 158px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 40px;
+  line-height: 100%;
+}
+.main-nav a {
+  color: #fff;
+}
+.main-nav a:hover {
+  color: #432;
+}
+.page-header {
+  display: flex; /*横並びの指定*/
+  justify-content: space-between; /*両端に設置する指定*/
+  /* padding: auto 4%; */
+  height: 60px;
+  width: 1440px;
+  background-color: #2B383FCC;
+}
+
+
+/* HOME---------------------- */
+.home-content h2 {
+  color: #fff;
+  /* padding-top: 188px; */
+  font-size: 40px;
+  /* border-style: solid;
+  border-color: #432; */
+  margin-bottom: 40px;
+}
+
+.button {
+  font-size: 24px;
+  color: #fff;
+  border-radius: 10px;
+  /* border-style: solid;
+  border-color: #432; */
+  background-color: #47AEA1;
+  padding: 10px 32px;
+}
+.button :hover {
+  background: #081311;
+}
+
+/* 大きな背景画像------------------- */
+.big-bg {
+  background-size: cover; /*画像の縦横比を保ったまま画面いっぱいに広げる*/
+  background-position: center top; /*背景画像の表示開始位置*/
+
+}
+#home {
+  background-image: url(/images/01FV.png);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* レッスン---------------------- */
+
+.lesson-title {
+  text-align: center;
+  margin: 80px 0 70px 0;
+  font-size: 32px;
+}
+.lesson-items {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 100px;
+  
+}
+.lesson-item {
+  margin-right: 35px;
+}
+img .lesson-logo {
+  height: 150px;
+  width: 253px;
+}
+.txt-title {
+  font-size: 24px;
+  margin: 19px 0 14px 0;
+}
+.lesson-button {
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 80px;
+}
+
+/* FOOTER-------------------- */
+footer {
+  height: 64px;
+  background-color: #556055;
+  display: flex;
+  /* flex-direction: column;  子要素が複数あるときに縦に並べられる*/
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+  
+}
